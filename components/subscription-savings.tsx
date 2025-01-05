@@ -6,7 +6,7 @@ import checkAnimation from "@/lottie/check.json";
 
 export default function SubscriptionSavings() {
   return (
-    <section className="bg-[#0A0A0A] py-24 px-6">
+    <section className="bg-background py-24 px-6">
       <div className="max-w-screen-xl mx-auto rounded-3xl bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] p-16">
         <div className="flex flex-col items-center text-center space-y-6">
           <h2 className="text-3xl md:text-5xl font-bold text-white">

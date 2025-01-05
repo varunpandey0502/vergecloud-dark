@@ -10,6 +10,8 @@ import CTA from "@/components/cta";
 import Footer from "@/components/footer";
 import SubscriptionSavings from "@/components/subscription-savings";
 import PlatformWalkthrough from "@/components/platform-walkthrough";
+import GlobalNetwork from "@/components/global-network";
+import WhyChoose from "@/components/why-choose";
 
 export default function Page() {
   return (
@@ -18,6 +20,8 @@ export default function Page() {
       <Hero />
       <SubscriptionSavings />
       <PlatformWalkthrough />
+      <GlobalNetwork />
+      <WhyChoose />
       {/* <Awards />
       <Stats />
       <Comparison />

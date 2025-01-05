@@ -27,7 +27,7 @@ const slides = [
 
 export default function PlatformWalkthrough() {
   return (
-    <section className="relative bg-[#030303] py-24 overflow-hidden">
+    <section className="relative bg-background px-6 py-24">
       {/* Grid Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -70,7 +70,7 @@ export default function PlatformWalkthrough() {
                 ))}
               </CarouselContent>
 
-              <div className="flex justify-between">
+              <div className="flex justify-between mt-4">
                 <CarouselPrevious className="static h-8 w-8 text-white" />
                 <CarouselNext className="static h-8 w-8 text-white" />
               </div>
