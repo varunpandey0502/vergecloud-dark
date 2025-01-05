@@ -9,6 +9,7 @@ import Awards from "@/components/awards";
 import CTA from "@/components/cta";
 import Footer from "@/components/footer";
 import SubscriptionSavings from "@/components/subscription-savings";
+import PlatformWalkthrough from "@/components/platform-walkthrough";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <Navbar />
       <Hero />
       <SubscriptionSavings />
+      <PlatformWalkthrough />
       {/* <Awards />
       <Stats />
       <Comparison />
