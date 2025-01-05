@@ -13,7 +13,7 @@ export default function Page() {
       {/* <SubscriptionSavings /> */}
       <PlatformWalkthrough />
       <GlobalNetwork />
-      {/* <WhyChoose /> */}
+      <WhyChoose />
       {/* <Awards />
       <Stats />
       <Comparison />
