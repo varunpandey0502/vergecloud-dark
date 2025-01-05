@@ -8,16 +8,26 @@ export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Load the video after the component mounts
     if (videoRef.current) {
+      // Ensure video is muted before attempting to play (crucial for iOS)
+      videoRef.current.muted = true;
       videoRef.current.load();
-      // Try to play the video
-      const playPromise = videoRef.current.play();
 
+      // set the video to autoplay
+      videoRef.current.play();
+
+      const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
         playPromise.catch((error) => {
           console.log("Auto-play was prevented:", error);
-          // Add any fallback behavior here if needed
+          // Retry play on user interaction if needed
+          document.addEventListener(
+            "touchstart",
+            () => {
+              videoRef.current?.play();
+            },
+            { once: true }
+          );
         });
       }
     }
@@ -27,13 +37,10 @@ export default function Hero() {
     <section className="relative bg-primary/80 pt-44 px-6 pb-28 overflow-hidden">
       <video
         ref={videoRef}
-        autoPlay
         muted
-        loop
         playsInline
+        loop
         preload="none"
-        webkit-playsinline="true"
-        x5-playsinline="true"
         className="absolute inset-0 w-full h-full object-cover -z-10"
       >
         <source src="/videos/hero-video.webm" type="video/webm" />
