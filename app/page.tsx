@@ -10,9 +10,9 @@ export default function Page() {
     <main>
       <Navbar />
       <Hero />
-      <SubscriptionSavings />
-      {/* <PlatformWalkthrough /> */}
-      {/* <GlobalNetwork /> */}
+      {/* <SubscriptionSavings /> */}
+      <PlatformWalkthrough />
+      <GlobalNetwork />
       {/* <WhyChoose /> */}
       {/* <Awards />
       <Stats />
