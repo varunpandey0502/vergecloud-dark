@@ -1,8 +1,5 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { HubspotProvider } from "next-hubspot";
-import Clients from "./clients";
-import HubspotForm from "./form";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);

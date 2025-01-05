@@ -3,17 +3,6 @@
 import { Button } from "./ui/button";
 
 export default function GlobalNetwork() {
-  const networkPoints = [
-    { top: "30%", left: "40%", type: "primary" },
-    { top: "35%", left: "45%", type: "secondary" },
-    // Add more points as needed
-  ];
-
-  const pointStyles = {
-    primary: "bg-[#FF4D4D]",
-    secondary: "bg-gray-400",
-  };
-
   return (
     <section className="relative bg-background px-6 pt-24">
       {/* Content */}
