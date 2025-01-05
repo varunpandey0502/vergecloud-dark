@@ -17,7 +17,7 @@ export default function GlobalNetwork() {
   return (
     <section className="relative bg-background px-6 pt-24">
       {/* Content */}
-      <div className="container px-6 relative z-10">
+      <div className="container relative z-10">
         <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-white">
             The VergeCloud Global Network

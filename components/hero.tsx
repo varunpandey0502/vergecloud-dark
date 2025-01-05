@@ -15,21 +15,6 @@ export default function Hero() {
 
       // set the video to autoplay
       videoRef.current.play();
-
-      const playPromise = videoRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((error) => {
-          console.log("Auto-play was prevented:", error);
-          // Retry play on user interaction if needed
-          document.addEventListener(
-            "touchstart",
-            () => {
-              videoRef.current?.play();
-            },
-            { once: true }
-          );
-        });
-      }
     }
   }, []);
 

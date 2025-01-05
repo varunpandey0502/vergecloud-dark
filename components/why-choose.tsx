@@ -63,7 +63,7 @@ export default function WhyChoose() {
               className="group relative bg-[#0A0A0A] rounded-2xl border border-white/[0.08] transition-all duration-300 hover:scale-[1.02]"
             >
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-[#FF4D4D] opacity-0 rounded-2xl group-hover:opacity-100 blur-md transition-opacity" />
+              <div className="absolute inset-0 bg-[#FF4D4D] opacity-0 rounded-2xl group-hover:opacity-40 blur-md transition-opacity" />
 
               {/* Content */}
               <div className="relative bg-[#0A0A0A] rounded-2xl p-8 space-y-4 z-[1]">
