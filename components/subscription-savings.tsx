@@ -1,7 +1,9 @@
 "use client";
 
 import { Button } from "./ui/button";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import checkAnimation from "@/lottie/check.json";
 
 export default function SubscriptionSavings() {
