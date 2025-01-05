@@ -13,7 +13,8 @@ export default function SubscriptionSavings() {
             Save 70% by Subscribing for a Year
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl">
-            Maximize value and minimize costs with VergeCloud's annual plan.
+            Maximize value and minimize costs with VergeCloud&apos;s annual
+            plan.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mt-8">
