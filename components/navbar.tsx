@@ -2,12 +2,9 @@
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
-  return <FlyoutNav />;
-};
-
-const FlyoutNav = () => {
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
 
@@ -28,7 +25,7 @@ const FlyoutNav = () => {
       <div className="flex max-w-screen-xl mx-auto items-center justify-between">
         <Logo scrolled={scrolled} />
         <div className="hidden gap-6 md:flex">
-          <CTAs />
+          <CTAs scrolled={scrolled} />
         </div>
       </div>
     </nav>
@@ -49,7 +46,7 @@ const Logo = ({ scrolled = false }: { scrolled?: boolean }) => {
   );
 };
 
-const CTAs = () => {
+const CTAs = ({ scrolled = false }: { scrolled?: boolean }) => {
   const handleBookDemo = () => {
     const formElement = document.getElementById("hubspot-form-wrapper");
     if (formElement) {
@@ -58,8 +55,16 @@ const CTAs = () => {
   };
 
   return (
-    <Button variant="accent" size="lg" onClick={handleBookDemo}>
-      Book a Demo
+    <Button
+      variant="outline"
+      size="default"
+      onClick={handleBookDemo}
+      className={cn(
+        "font-bold py-6 text-md",
+        scrolled ? "bg-primary text-white" : "bg-transparent text-white"
+      )}
+    >
+      Sign Up For Free
     </Button>
   );
 };

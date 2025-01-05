@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Peoplebox vs Leapsome",
-  description: "Compare Peoplebox vs Leapsome",
+  title: "VergeCloud",
+  description: "",
   robots: {
     index: false,
     follow: false,

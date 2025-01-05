@@ -34,7 +34,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-primary/80 pt-44 px-6 pb-28 overflow-hidden">
+    <section className="relative bg-primary/60 pt-28 md:pt-40 px-6 pb-28 overflow-hidden">
       <video
         ref={videoRef}
         muted
@@ -49,12 +49,12 @@ export default function Hero() {
 
       <div className="flex flex-col md:flex-row md:items-start justify-between max-w-screen-xl mx-auto items-center relative z-10">
         <div className="space-y-6 flex flex-col items-start">
-          <h1 className="text-5xl font-bold text-white">
+          <h1 className="md:text-5xl text-3xl font-bold text-white">
             Blazing-fast Content Delivery.
             <br />
             Everywhere, Every Time.
           </h1>
-          <p className="text-xl text-white">
+          <p className="md:text-xl text-md text-white">
             Now{" "}
             <span className="text-[#4ADE80] font-bold">free for 3 months</span>,
             on our Growth and Professional plan, on signing up
@@ -62,18 +62,28 @@ export default function Hero() {
             before 31st January 2025!
           </p>
 
-          <div className="grid grid-cols-3 gap-8 pt-12">
-            <div className="bg-[#ffffff1a] rounded-lg p-6 backdrop-blur-sm">
-              <h3 className="text-4xl font-bold text-white">6 Mn+</h3>
-              <p className="text-white mt-2">Responses Per Minute+</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 self-center w-full">
+            <div className="bg-[#ffffff1a] rounded-lg p-6 backdrop-blur-sm w-full">
+              <h3 className="md:text-4xl text-2xl font-bold text-white">
+                6 Mn+
+              </h3>
+              <p className="md:text-lg text-sm text-white mt-2">
+                Responses Per Minute+
+              </p>
             </div>
             <div className="bg-[#ffffff1a] rounded-lg p-6 backdrop-blur-sm">
-              <h3 className="text-4xl font-bold text-white">99.99%</h3>
-              <p className="text-white mt-2">Uptime Reliability</p>
+              <h3 className="md:text-4xl text-2xl font-bold text-white">
+                99.99%
+              </h3>
+              <p className="md:text-lg text-sm text-white mt-2">
+                Uptime Reliability
+              </p>
             </div>
             <div className="bg-[#ffffff1a] rounded-lg p-6 backdrop-blur-sm">
-              <h3 className="text-4xl font-bold text-white">80%</h3>
-              <p className="text-white mt-2">Reduced Bandwidth Cost</p>
+              <h3 className="md:text-4xl text-2xl font-bold text-white">80%</h3>
+              <p className="md:text-lg text-sm text-white mt-2">
+                Reduced Bandwidth Cost
+              </p>
             </div>
           </div>
         </div>

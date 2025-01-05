@@ -8,12 +8,14 @@ import Reviews from "@/components/reviews";
 import Awards from "@/components/awards";
 import CTA from "@/components/cta";
 import Footer from "@/components/footer";
+import SubscriptionSavings from "@/components/subscription-savings";
 
 export default function Page() {
   return (
     <main>
       <Navbar />
       <Hero />
+      <SubscriptionSavings />
       {/* <Awards />
       <Stats />
       <Comparison />
