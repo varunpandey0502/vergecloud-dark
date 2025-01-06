@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Button } from "./ui/button";
 
 type PlanFeature = {
   name: string;
@@ -97,70 +98,79 @@ export default function Pricing() {
             {/* Two horizontal gradients */}
             <div className="absolute inset-0 z-0">
               {/* Left gradient */}
-              <div className="absolute left-[20%] top-1/2 -translate-y-1/2 w-[600px] h-[1200px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
+              <div className="absolute left-[20%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
               {/* Right gradient */}
               <div className="absolute right-[20%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
 
-              <div className="absolute right-[0%] top-1/2 -translate-y-1/2 w-[600px] h-[1200px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
+              <div className="absolute right-[0%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
             </div>
 
-            <table className="relative z-10 w-full border-separate border-spacing-x-2 border-spacing-y-0 rounded-3xl bg-primary/40 backdrop-blur-sm p-4">
-              <thead>
-                <tr>
-                  <th className="text-left p-4 text-lg font-medium text-white rounded-t-3xl w-1/4">
-                    Features
-                  </th>
-                  <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
-                    <div className="relative z-10">
-                      <h3 className="text-xl font-bold text-white text-center">
-                        Growth
-                        <span className="block text-sm text-white/60 mt-1">
-                          ₹1679/month
-                        </span>
-                      </h3>
-                    </div>
-                  </th>
-                  <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
-                    <div className="relative z-10">
-                      <h3 className="text-xl font-bold text-white text-center">
-                        Professional
-                        <span className="block text-sm text-white/60 mt-1">
-                          ₹16790/month
-                        </span>
-                      </h3>
-                    </div>
-                  </th>
-                  <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
-                    <div className="relative z-10">
-                      <h3 className="text-xl font-bold text-white text-center">
-                        Enterprise
-                        <span className="block text-sm text-white/60 mt-1">
-                          ₹167900/month
-                        </span>
-                      </h3>
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {features.map((feature, index) => (
-                  <tr key={index}>
-                    <td className="p-4 text-white border-t border-white/[0.08]">
-                      {feature.name}
-                    </td>
-                    <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
-                      {feature.growth}
-                    </td>
-                    <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
-                      {feature.professional}
-                    </td>
-                    <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
-                      {feature.enterprise}
-                    </td>
+            <div className="flex flex-col relative z-10 w-full p-4 rounded-3xl bg-primary/40 backdrop-blur-lg backdrop-filter items-center justify-center">
+              <table className="border-separate border-spacing-x-4 p-4 border-spacing-y-0 rounded-3xl w-full">
+                <thead>
+                  <tr>
+                    <th className="text-left p-4 text-lg font-medium text-white rounded-t-3xl w-1/4">
+                      Features
+                    </th>
+                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
+                      <div className="relative z-10">
+                        <h3 className="text-xl font-bold text-white text-center">
+                          Growth
+                          <span className="block text-sm text-white/60 mt-1">
+                            ₹1679/month
+                          </span>
+                        </h3>
+                      </div>
+                    </th>
+                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
+                      <div className="relative z-10">
+                        <h3 className="text-xl font-bold text-white text-center">
+                          Professional
+                          <span className="block text-sm text-white/60 mt-1">
+                            ₹16790/month
+                          </span>
+                        </h3>
+                      </div>
+                    </th>
+                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
+                      <div className="relative z-10">
+                        <h3 className="text-xl font-bold text-white text-center">
+                          Enterprise
+                          <span className="block text-sm text-white/60 mt-1">
+                            ₹167900/month
+                          </span>
+                        </h3>
+                      </div>
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {features.map((feature, index) => (
+                    <tr key={index}>
+                      <td className="p-4 text-white border-t border-white/[0.08]">
+                        {feature.name}
+                      </td>
+                      <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
+                        {feature.growth}
+                      </td>
+                      <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
+                        {feature.professional}
+                      </td>
+                      <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
+                        {feature.enterprise}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              {/* Get Started Button */}
+              <div className="relative z-10 mt-8 p-4">
+                <Button variant="default" size="lg" className="">
+                  Get Started For Free
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -248,6 +258,17 @@ export default function Pricing() {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Mobile Get Started Button */}
+          <div className="flex justify-center mt-8">
+            <Button
+              variant="default"
+              size="lg"
+              className="bg-[#573FE7] hover:bg-[#573FE7]/90 text-white px-8 py-6 text-lg font-semibold"
+            >
+              Get Started For Free
+            </Button>
           </div>
         </div>
       </div>
