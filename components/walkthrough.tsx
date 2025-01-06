@@ -17,7 +17,13 @@ const slides = [
       "Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper malesu ada tellus risus posuere.",
   },
   {
-    image: "/images/walkthrough/feature-1.png",
+    image: "/images/walkthrough/feature-2.jpeg",
+    title: "Seamless Setup",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper malesu ada tellus risus posuere.",
+  },
+  {
+    image: "/images/walkthrough/feature-3.jpeg",
     title: "Seamless Setup",
     description:
       "Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper malesu ada tellus risus posuere.",

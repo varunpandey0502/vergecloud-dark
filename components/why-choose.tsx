@@ -66,7 +66,7 @@ export default function WhyChoose() {
               <div className="absolute inset-0 bg-[#FF4D4D] opacity-0 rounded-2xl group-hover:opacity-40 blur-md transition-opacity" />
 
               {/* Content */}
-              <div className="relative bg-[#0A0A0A] rounded-2xl p-8 space-y-4 z-[1]">
+              <div className="relative bg-[#0a102a] rounded-2xl p-8 space-y-4 z-[1]">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-[#FF4D4D]/20 group-hover:text-[#FF4D4D]">
                   {feature.icon}
                 </div>
