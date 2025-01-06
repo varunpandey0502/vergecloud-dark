@@ -1,5 +1,6 @@
 "use client";
 
+import { CTAButton } from "./cta-button";
 import { Button } from "./ui/button";
 
 const steps = [
@@ -63,9 +64,9 @@ export default function GetStarted() {
               ))}
             </div>
 
-            <Button className="px-8 py-6 text-lg font-bold">
-              Get Started For Free
-            </Button>
+            <div className="mt-12 ml-24">
+              <CTAButton />
+            </div>
           </div>
 
           <div className="relative">

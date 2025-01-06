@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
-import { ToggleButton } from "./ToggleButton";
+import { useState } from "react";
+import { CTAButton } from "../cta-button";
 import { data } from "./data";
 import { FeatureDisplay } from "./FeatureDisplay";
-import { CTAButton, GetStartedButton } from "../cta-button";
+import { ToggleButton } from "./ToggleButton";
 
 export const Features = () => {
   const [selected, setSelected] = useState(1);
@@ -25,8 +25,8 @@ export const Features = () => {
           </p>
         </div>
 
-        <div className="w-full">
-          <div className="mb-9 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="w-full flex flex-col items-center">
+          <div className="mb-9 flex flex-row justify-center gap-4 overflow-x-auto">
             {data.map((d) => (
               <ToggleButton
                 key={d.id}

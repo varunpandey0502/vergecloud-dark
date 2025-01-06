@@ -1,11 +1,10 @@
 "use client";
 
-import { Button } from "./ui/button";
+import checkAnimation from "@/lottie/check.json";
 import dynamic from "next/dynamic";
+import { CTAButton } from "./cta-button";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-import checkAnimation from "@/lottie/check.json";
-import { CTAButton } from "./cta-button";
 
 export default function SubscriptionSavings() {
   return (

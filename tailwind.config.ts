@@ -18,7 +18,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-arial)"],
+        sans: ["var(--font-noto-sans)"],
       },
       colors: {
         border: "hsl(var(--border))",

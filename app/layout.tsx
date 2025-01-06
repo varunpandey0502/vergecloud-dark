@@ -1,4 +1,4 @@
-import { arial } from "@/fonts";
+import { notoSans } from "@/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${arial.variable} font-sans`}>{children}</body>
+      <body className={`${notoSans.variable} font-sans`}>{children}</body>
     </html>
   );
 }

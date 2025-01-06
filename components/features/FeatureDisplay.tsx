@@ -1,6 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React from "react";
-import { Button } from "@/components/ui/button";
 
 export const FeatureDisplay = ({
   selected,
@@ -16,12 +14,12 @@ export const FeatureDisplay = ({
   Component: () => JSX.Element;
 }) => {
   return (
-    <div className="grid h-fit w-full grid-cols-1 lg:grid-cols-2 gap-12">
+    <div className="grid h-fit w-full grid-cols-1 lg:grid-cols-2 gap-24">
       <div className="space-y-8">
         {cardSubtitle.map((feature, index) => (
           <div key={index} className="flex items-start gap-6">
             <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#573FE7]/10 flex items-center justify-center">
-              <img src={feature.icon} alt={feature.title} className="w-8 h-8" />
+              {/* <img src={feature.icon} alt={feature.title} className="w-8 h-8" /> */}
             </div>
             <div className="space-y-2">
               <h3 className="text-[#573FE7] text-xl font-semibold">

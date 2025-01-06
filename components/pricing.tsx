@@ -93,12 +93,12 @@ export default function Pricing() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden lg:block overflow-clip rounded-3xl">
+        <div className="hidden lg:block overflow rounded-3xl">
           <div className="relative">
             {/* Two horizontal gradients */}
             <div className="absolute inset-0 z-0">
               {/* Left gradient */}
-              <div className="absolute left-[20%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
+              <div className="absolute left-[20%] top-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
               {/* Right gradient */}
               <div className="absolute right-[20%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full mix-blend-screen filter blur-[80px] opacity-100 bg-gradient-to-b from-[#573FE7] to-[#E7533F]" />
 
@@ -106,13 +106,13 @@ export default function Pricing() {
             </div>
 
             <div className="flex flex-col relative z-10 w-full p-4 rounded-3xl bg-primary/40 backdrop-blur-lg backdrop-filter items-center justify-center">
-              <table className="border-separate border-spacing-x-4 p-4 border-spacing-y-0 rounded-3xl w-full">
+              <table className="border-separate border-spacing-x-1 p-4 border-spacing-y-0 rounded-3xl w-full">
                 <thead>
                   <tr>
                     <th className="text-left p-4 text-lg font-medium text-white rounded-t-3xl w-1/4">
                       Features
                     </th>
-                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
+                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-3xl relative border-b-2 border-white/80">
                       <div className="relative z-10">
                         <h3 className="text-xl font-bold text-white text-center">
                           Growth
@@ -122,7 +122,7 @@ export default function Pricing() {
                         </h3>
                       </div>
                     </th>
-                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
+                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-3xl relative border-b-2 border-white/80">
                       <div className="relative z-10">
                         <h3 className="text-xl font-bold text-white text-center">
                           Professional
@@ -132,7 +132,7 @@ export default function Pricing() {
                         </h3>
                       </div>
                     </th>
-                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-t-3xl relative">
+                    <th className="p-4 w-1/4 bg-[#1F1F47]/40 rounded-3xl relative border-b-2 border-white/80">
                       <div className="relative z-10">
                         <h3 className="text-xl font-bold text-white text-center">
                           Enterprise
@@ -150,13 +150,31 @@ export default function Pricing() {
                       <td className="p-4 text-white border-t border-white/[0.08]">
                         {feature.name}
                       </td>
-                      <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
+                      <td
+                        className={`p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08] ${
+                          index === 0 ? "rounded-t-3xl" : ""
+                        } ${
+                          index === features.length - 1 ? "rounded-b-3xl" : ""
+                        }`}
+                      >
                         {feature.growth}
                       </td>
-                      <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
+                      <td
+                        className={`p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08] ${
+                          index === 0 ? "rounded-t-3xl" : ""
+                        } ${
+                          index === features.length - 1 ? "rounded-b-3xl" : ""
+                        }`}
+                      >
                         {feature.professional}
                       </td>
-                      <td className="p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08]">
+                      <td
+                        className={`p-4 text-center text-white bg-[#1F1F47]/40 border-t border-white/[0.08] ${
+                          index === 0 ? "rounded-t-3xl" : ""
+                        } ${
+                          index === features.length - 1 ? "rounded-b-3xl" : ""
+                        }`}
+                      >
                         {feature.enterprise}
                       </td>
                     </tr>

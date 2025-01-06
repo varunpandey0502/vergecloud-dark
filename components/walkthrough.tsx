@@ -1,7 +1,6 @@
 "use client";
 
 import { CTAButton } from "./cta-button";
-import { Button } from "./ui/button";
 import {
   Carousel,
   CarouselContent,

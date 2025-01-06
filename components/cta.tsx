@@ -1,24 +1,27 @@
-"use client";
-import { Button } from "./ui/button";
+import { CTAButton } from "./cta-button";
 
-export default function CTA() {
-  const handleBookDemo = () => {
-    const formElement = document.getElementById("hubspot-form-wrapper");
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+export const Cta = () => {
   return (
-    <section className="max-w-screen-xl mx-auto px-12 my-16">
-      <div className="bg-secondary py-16 rounded-t-[3rem] flex flex-col items-center justify-center text-center">
-        <h2 className="text-xl md:text-4xl lg:text-5xl font-bold text-primary px-8">
-          Become a goal-oriented, <br /> people-first company with Peoplebox
-        </h2>
-        <Button className="mt-8" variant="accent" onClick={handleBookDemo}>
-          Book a Demo
-        </Button>
+    <section className="bg-background px-6 py-24">
+      <div className="container">
+        <div className="rounded-3xl bg-gradient-to-br from-[#573FE7]/20 to-[#573FE7]/5 py-24 px-6 relative overflow-hidden">
+          {/* Gradient circles */}
+          <div className="absolute left-1/8 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-r from-[#573FE7]/30 to-purple-400/20 blur-3xl" />
+          <div className="absolute right-1/4 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-l from-[#573FE7]/30 to-purple-400/20 blur-3xl" />
+
+          {/* Content */}
+          <div className="flex flex-col items-center text-center space-y-6 relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-white">
+              3 Months On Us. Sign Up and Save!
+            </h2>
+            <p className="text-lg text-gray-400 max-w-2xl">
+              Get started in seconds. Limited Time Offer. No credit card
+              required.
+            </p>
+            <CTAButton />
+          </div>
+        </div>
       </div>
     </section>
   );
-}
+};

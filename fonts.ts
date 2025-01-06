@@ -1,10 +1,10 @@
-import localFont from "next/font/local";
+import { Noto_Sans } from "next/font/google";
 
-const arial = localFont({
-  src: "./fonts/arial.ttf",
+const notoSans = Noto_Sans({
   weight: "400",
   display: "swap",
-  variable: "--font-arial",
+  variable: "--font-noto-sans",
+  subsets: ["latin"],
 });
 
-export { arial };
+export { notoSans };
