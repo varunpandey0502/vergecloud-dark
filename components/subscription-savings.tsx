@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import checkAnimation from "@/lottie/check.json";
+import { CTAButton } from "./cta-button";
 
 export default function SubscriptionSavings() {
   return (
@@ -48,9 +49,7 @@ export default function SubscriptionSavings() {
             </div>
           </div>
 
-          <Button className="mt-8 px-8 py-6 text-lg font-bold">
-            Get Started For Free
-          </Button>
+          <CTAButton />
         </div>
       </div>
     </section>

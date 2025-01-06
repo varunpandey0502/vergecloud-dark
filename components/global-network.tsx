@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "./ui/button";
+import { CTAButton } from "./cta-button";
 
 export default function GlobalNetwork() {
   return (
@@ -15,9 +15,7 @@ export default function GlobalNetwork() {
             40+ strategically located PoP sites worldwide ensuring the lowest
             latency and fastest content delivery
           </p>
-          <Button className="px-8 py-6 text-lg font-bold">
-            Get Started For Free
-          </Button>
+          <CTAButton />
         </div>
 
         {/* World Map */}

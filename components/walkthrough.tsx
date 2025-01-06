@@ -1,5 +1,6 @@
 "use client";
 
+import { CTAButton } from "./cta-button";
 import { Button } from "./ui/button";
 import {
   Carousel,
@@ -43,9 +44,7 @@ export default function Walkthrough() {
               {slides[0].title}
             </h2>
             <p className="text-lg text-gray-400">{slides[0].description}</p>
-            <Button className="px-8 py-6 text-lg font-bold">
-              Get Started For Free
-            </Button>
+            <CTAButton />
           </div>
 
           <div>

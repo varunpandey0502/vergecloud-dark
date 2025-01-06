@@ -6,6 +6,8 @@ import WhyChoose from "@/components/why-choose";
 import GetStarted from "@/components/get-started";
 import Walkthrough from "@/components/walkthrough";
 import Pricing from "@/components/pricing";
+import { Features } from "@/components/features/Features";
+import { PromoSection } from "@/components/PromoSection";
 
 export default function Page() {
   return (
@@ -18,6 +20,8 @@ export default function Page() {
       <WhyChoose />
       <GetStarted />
       <Pricing />
+      <Features />
+      <PromoSection />
       {/* <Awards />
       <Stats />
       <Comparison />
