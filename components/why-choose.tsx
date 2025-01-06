@@ -43,7 +43,7 @@ const features = [
 
 export default function WhyChoose() {
   return (
-    <section className="bg-background px-6 pb-24">
+    <section className="bg-background px-6 pb-12">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <span className="text-white/60">Why Choose Vergecloud</span>

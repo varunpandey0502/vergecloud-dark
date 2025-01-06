@@ -25,9 +25,9 @@ const slides = [
   // Add more slides as needed
 ];
 
-export default function PlatformWalkthrough() {
+export default function Walkthrough() {
   return (
-    <section className="relative bg-background px-6 py-24">
+    <section className="relative bg-background px-6 py-12">
       {/* Grid Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
