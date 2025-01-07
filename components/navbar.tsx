@@ -66,7 +66,8 @@ const CTAs = ({ scrolled = false }: { scrolled?: boolean }) => {
       onClick={scrollToForm}
       className={cn(
         "font-bold py-6 text-md",
-        scrolled ? "bg-primary text-white" : "bg-transparent text-white"
+        scrolled ? "bg-primary text-white" : "bg-transparent text-white",
+        "hover:bg-primary/80 hover:text-white transition-all duration-300 ease-out"
       )}
     >
       Sign Up For Free
