@@ -67,7 +67,9 @@ const CTAs = ({ scrolled = false }: { scrolled?: boolean }) => {
       className={cn(
         "font-bold px-2 py-4 md:px-6 md:py-6 text-sm md:text-base",
         scrolled ? "bg-primary text-white" : "bg-transparent text-white",
-        "hover:bg-primary/80 hover:text-white transition-all duration-300 ease-out"
+        scrolled
+          ? "hover:bg-primary/80 hover:text-white transition-all duration-300 ease-out"
+          : "hover:bg-white hover:text-primary transition-all duration-300 ease-out"
       )}
     >
       Sign Up For Free
