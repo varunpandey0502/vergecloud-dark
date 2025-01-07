@@ -25,20 +25,20 @@ export const Features = () => {
           </p>
         </div>
 
-        <div className="w-full flex flex-col items-center">
-          <div className="mb-9 flex flex-row justify-center gap-4 overflow-x-auto">
-            {data.map((d) => (
-              <ToggleButton
-                key={d.id}
-                id={d.id}
-                selected={selected}
-                setSelected={setSelected}
-              >
-                {d.title}
-              </ToggleButton>
-            ))}
-          </div>
+        <div className="mb-9 flex flex-row gap-4 overflow-x-auto md:justify-center">
+          {data.map((d) => (
+            <ToggleButton
+              key={d.id}
+              id={d.id}
+              selected={selected}
+              setSelected={setSelected}
+            >
+              {d.title}
+            </ToggleButton>
+          ))}
+        </div>
 
+        <div className="w-full flex flex-col items-center">
           <div className="w-full">
             <FeatureDisplay
               selected={selected}

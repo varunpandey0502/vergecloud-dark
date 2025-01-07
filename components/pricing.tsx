@@ -84,7 +84,7 @@ export default function Pricing() {
   >("growth");
 
   return (
-    <section className="bg-background px-6 py-24">
+    <section className="bg-background px-6 py-12 md:py-24">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -200,7 +200,7 @@ export default function Pricing() {
               onClick={() => setSelectedPlan("growth")}
               className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                 selectedPlan === "growth"
-                  ? "bg-[#1F1F47] text-white"
+                  ? "bg-primary text-white"
                   : "text-white/60"
               }`}
             >
@@ -210,7 +210,7 @@ export default function Pricing() {
               onClick={() => setSelectedPlan("professional")}
               className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                 selectedPlan === "professional"
-                  ? "bg-[#1F1F47] text-white"
+                  ? "bg-primary text-white"
                   : "text-white/60"
               }`}
             >
@@ -220,7 +220,7 @@ export default function Pricing() {
               onClick={() => setSelectedPlan("enterprise")}
               className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                 selectedPlan === "enterprise"
-                  ? "bg-[#1F1F47] text-white"
+                  ? "bg-primary text-white"
                   : "text-white/60"
               }`}
             >

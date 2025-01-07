@@ -2,7 +2,7 @@ import { CTAButton } from "./cta-button";
 
 export const Cta = () => {
   return (
-    <section className="bg-background px-6 py-24">
+    <section className="bg-background px-6 py-12 md:py-24">
       <div className="container">
         <div className="rounded-3xl bg-gradient-to-br from-[#573FE7]/20 to-[#573FE7]/5 py-24 px-6 relative overflow-hidden">
           {/* Gradient circles */}

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { SignupForm } from "./SignupForm";
+import Form from "./form";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -17,7 +17,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-primary/60 pt-28 md:pt-40 px-6 pb-40 overflow-hidden">
+    <section className="relative bg-primary/60 pt-28 md:pt-40 px-6 pb-10 md:pb-40 overflow-hidden">
       <video
         ref={videoRef}
         muted
@@ -30,7 +30,7 @@ export default function Hero() {
         <source src="/videos/hero-video.mp4" type="video/mp4" />
       </video>
 
-      <div className="flex flex-col md:flex-row md:items-center justify-between max-w-screen-xl mx-auto items-center relative z-10 gap-32">
+      <div className="flex flex-col md:flex-row md:items-center justify-between max-w-screen-xl mx-auto items-center relative z-10 md:gap-32 gap-10">
         <div className="space-y-6 flex flex-col items-start">
           <h1 className="md:text-5xl text-3xl font-bold text-white">
             Blazing-fast Content Delivery.
@@ -47,33 +47,35 @@ export default function Hero() {
             before 31st January 2025!
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 self-center w-full">
-            <div className="bg-[#ffffff1a] rounded-lg px-6 py-8 border border-white/[0.08] w-full">
-              <h3 className="md:text-4xl text-2xl font-bold text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 pt-2 sm:pt-12 self-center w-full">
+            <div className="bg-[#ffffff1a] rounded-lg px-4 sm:px-6 py-4 sm:py-8 border border-white/[0.08] w-full">
+              <h3 className="lg:text-4xl text-xl sm:text-2xl font-bold text-white">
                 6 Mn+
               </h3>
-              <p className="md:text-md text-sm text-white mt-2">
+              <p className="text-xs sm:text-sm text-white mt-1 sm:mt-2">
                 Responses Per Minute+
               </p>
             </div>
-            <div className="bg-[#ffffff1a] rounded-lg px-6 py-8 border border-white/[0.08] backdrop-blur-sm">
-              <h3 className="md:text-4xl text-2xl font-bold text-white">
+            <div className="bg-[#ffffff1a] rounded-lg px-4 sm:px-6 py-4 sm:py-8 border border-white/[0.08] backdrop-blur-sm">
+              <h3 className="lg:text-4xl text-xl sm:text-2xl font-bold text-white">
                 99.99%
               </h3>
-              <p className="md:text-md text-sm text-white mt-2">
+              <p className="text-xs sm:text-sm text-white mt-1 sm:mt-2">
                 Uptime Reliability
               </p>
             </div>
-            <div className="bg-[#ffffff1a] rounded-lg px-6 py-8 border border-white/[0.08] backdrop-blur-sm">
-              <h3 className="md:text-4xl text-2xl font-bold text-white">80%</h3>
-              <p className="md:text-md text-sm text-white mt-2">
+            <div className="bg-[#ffffff1a] rounded-lg px-4 sm:px-6 py-4 sm:py-8 border border-white/[0.08] backdrop-blur-sm">
+              <h3 className="lg:text-4xl text-xl sm:text-2xl font-bold text-white">
+                80%
+              </h3>
+              <p className="text-xs sm:text-sm text-white mt-1 sm:mt-2">
                 Reduced Bandwidth Cost
               </p>
             </div>
           </div>
         </div>
 
-        <SignupForm />
+        <Form />
       </div>
     </section>
   );

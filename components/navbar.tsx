@@ -24,9 +24,7 @@ const Navbar = () => {
     >
       <div className="flex max-w-screen-xl mx-auto items-center justify-between">
         <Logo scrolled={scrolled} />
-        <div className="hidden gap-6 md:flex">
-          <CTAs scrolled={scrolled} />
-        </div>
+        <CTAs scrolled={scrolled} />
       </div>
     </nav>
   );
@@ -41,16 +39,23 @@ const Logo = ({ scrolled = false }: { scrolled?: boolean }) => {
           : "/images/vergecloud-logo-white.svg"
       }
       alt="VergeCloud Logo"
-      className="h-6 md:h-16"
+      className="h-10 md:h-16"
     />
   );
 };
 
 const CTAs = ({ scrolled = false }: { scrolled?: boolean }) => {
-  const handleBookDemo = () => {
-    const formElement = document.getElementById("hubspot-form-wrapper");
+  const scrollToForm = () => {
+    const formElement = document.getElementById("form");
     if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 100;
+      const elementPosition = formElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -58,7 +63,7 @@ const CTAs = ({ scrolled = false }: { scrolled?: boolean }) => {
     <Button
       variant="outline"
       size="default"
-      onClick={handleBookDemo}
+      onClick={scrollToForm}
       className={cn(
         "font-bold py-6 text-md",
         scrolled ? "bg-primary text-white" : "bg-transparent text-white"

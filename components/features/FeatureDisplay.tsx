@@ -14,12 +14,27 @@ export const FeatureDisplay = ({
   Component: () => JSX.Element;
 }) => {
   return (
-    <div className="grid h-fit w-full grid-cols-1 lg:grid-cols-2 gap-24">
+    <div className="grid h-fit w-full grid-cols-1 lg:grid-cols-2 gap-6 md:gap-24">
+      {/* Image shown above content on mobile */}
+      <div className="lg:hidden mb-8 relative">
+        <AnimatePresence mode="popLayout">
+          <motion.div
+            initial={{ opacity: 0, y: 50, x: 50 }}
+            animate={{ opacity: 1, y: 0, x: 0 }}
+            exit={{ opacity: 0, y: 50, x: 50 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            key={selected}
+          >
+            <Component />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
       <div className="space-y-8">
         {cardSubtitle.map((feature, index) => (
           <div key={index} className="flex items-start gap-6">
             <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#573FE7]/10 flex items-center justify-center">
-              {/* <img src={feature.icon} alt={feature.title} className="w-8 h-8" /> */}
+              <img src={feature.icon} alt={feature.title} className="w-8 h-8" />
             </div>
             <div className="space-y-2">
               <h3 className="text-[#573FE7] text-xl font-semibold">
@@ -33,7 +48,8 @@ export const FeatureDisplay = ({
         ))}
       </div>
 
-      <div className="relative">
+      {/* Image hidden on mobile, shown on desktop */}
+      <div className="relative hidden lg:block">
         <AnimatePresence mode="popLayout">
           <motion.div
             initial={{ opacity: 0, y: 50, x: 50 }}

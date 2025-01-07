@@ -13,22 +13,18 @@ const slides = [
   {
     image: "/images/walkthrough/feature-1.png",
     title: "Seamless Setup, Instant Results",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper malesu ada tellus risus posuere.",
+    description: "",
   },
   {
     image: "/images/walkthrough/feature-2.jpeg",
     title: "Seamless Setup",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper malesu ada tellus risus posuere.",
+    description: "",
   },
   {
     image: "/images/walkthrough/feature-3.jpeg",
     title: "Seamless Setup",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper malesu ada tellus risus posuere.",
+    description: "",
   },
-  // Add more slides as needed
 ];
 
 export default function Walkthrough() {
@@ -48,7 +44,12 @@ export default function Walkthrough() {
             <h2 className="text-3xl md:text-5xl font-bold text-white">
               {slides[0].title}
             </h2>
-            <p className="text-lg text-gray-400">{slides[0].description}</p>
+            <p className="text-lg text-gray-400">
+              Our intuitive dashboard puts powerful CDN controls at your
+              fingertips. Configure caching rules, monitor real-time analytics,
+              and manage SSL certificates through a single, user-friendly
+              interface.
+            </p>
             <CTAButton />
           </div>
 
