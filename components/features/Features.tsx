@@ -14,9 +14,9 @@ export const Features = () => {
   return (
     <section className="px-6 py-12 bg-background">
       <div className="container">
-        <div className="text-center space-y-4 mb-16">
+        <div className="text-center space-y-4 mb-8 md:mb-16">
           <span className="text-white/60">Use Cases</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-2xl md:text-5xl font-bold text-white">
             Solutions That Speak Your Industry Language
           </h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
@@ -25,7 +25,7 @@ export const Features = () => {
           </p>
         </div>
 
-        <div className="mb-9 flex flex-row gap-4 overflow-x-auto md:justify-center">
+        <div className="mb-8 flex flex-row gap-4 overflow-x-auto md:justify-center">
           {data.map((d) => (
             <ToggleButton
               key={d.id}

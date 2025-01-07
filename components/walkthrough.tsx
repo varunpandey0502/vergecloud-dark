@@ -41,7 +41,8 @@ export default function Walkthrough() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <span className="text-white/60">Platform Walkthrough</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white">
+
+            <h2 className="text-2xl md:text-5xl font-bold text-white">
               {slides[0].title}
             </h2>
             <p className="text-lg text-gray-400">

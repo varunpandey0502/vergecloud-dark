@@ -8,7 +8,7 @@ export default function GlobalNetwork() {
       {/* Content */}
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-2xl md:text-5xl font-bold text-white">
             The VergeCloud Global Network
           </h2>
           <p className="text-lg text-gray-400">

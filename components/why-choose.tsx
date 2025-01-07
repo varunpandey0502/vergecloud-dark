@@ -53,7 +53,7 @@ export default function WhyChoose() {
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <span className="text-white/60">Why Choose Vergecloud</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-2xl md:text-5xl font-bold text-white">
             Fast. Secure. Limitless.
           </h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">

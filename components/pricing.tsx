@@ -87,7 +87,7 @@ export default function Pricing() {
     <section className="bg-background px-6 py-12 md:py-24">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
             Premium Performance, Priced for Growth
           </h2>
         </div>

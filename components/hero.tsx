@@ -32,9 +32,14 @@ export default function Hero() {
 
       <div className="flex flex-col md:flex-row md:items-center justify-between max-w-screen-xl mx-auto items-center relative z-10 md:gap-32 gap-10">
         <div className="space-y-6 md:space-y-12 flex flex-col items-start">
-          <h1 className="md:text-5xl text-2xl font-extrabold text-white flex flex-col gap-2">
-            <div className="">Blazing-fast Content Delivery.</div>
-            <div>Everywhere, Every Time.</div>
+          <h1 className="md:text-5xl text-3xl leading-relaxed font-extrabold text-white">
+            <span className="md:hidden">
+              Blazing-fast Content Delivery. Everywhere, Every Time.
+            </span>
+            <span className="hidden md:flex flex-col gap-4">
+              <span>Blazing-fast Content Delivery.</span>
+              <span>Everywhere, Every Time.</span>
+            </span>
           </h1>
           <p className="md:text-xl text-md text-white">
             Now{" "}
