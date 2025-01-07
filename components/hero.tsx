@@ -17,7 +17,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-primary/60 pt-28 md:pt-40 px-6 pb-10 md:pb-40 overflow-hidden">
+    <section className="relative bg-primary/60 pt-28 md:pt-32 px-6 pb-10 md:pb-40 overflow-hidden">
       <video
         ref={videoRef}
         muted
@@ -51,7 +51,7 @@ export default function Hero() {
             before 31st January 2025!
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 pt-2 sm:pt-12 self-center w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 pt-2 sm:pt-2 self-center w-full">
             <div className="bg-[#ffffff1a] rounded-lg px-4 sm:px-6 py-4 sm:py-8 border border-white/[0.08] w-full">
               <h3 className="text-4xl font-bold text-white">6 Mn+</h3>
               <p className="text-xs sm:text-sm text-white mt-1 sm:mt-2">
