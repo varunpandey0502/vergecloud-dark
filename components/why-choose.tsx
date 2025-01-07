@@ -1,12 +1,11 @@
 "use client";
 import {
-  GlobalContentDeliveryIcon,
   ContentCachingIcon,
-  RealTimeOptimizationIcon,
   DdosProtectionIcon,
-  RobustSecurityIcon,
-  ValueForMoneyIcon,
+  GlobalContentDeliveryIcon,
+  RealTimeOptimizationIcon,
   ScalableInfrastructureIcon,
+  ValueForMoneyIcon,
 } from "./icons";
 
 const features = [

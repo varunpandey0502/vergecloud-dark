@@ -1,5 +1,3 @@
-import { Globe, Shield, Zap, Settings } from "lucide-react";
-
 const MediaComponent = () => {
   return (
     <img

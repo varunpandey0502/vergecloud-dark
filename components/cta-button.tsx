@@ -7,7 +7,7 @@ export const CTAButton = ({ text = "Get Started For Free" }) => {
     if (formElement) {
       const offset = 100;
       const elementPosition = formElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      const offsetPosition = elementPosition + window.scrollY - offset;
 
       window.scrollTo({
         top: offsetPosition,
