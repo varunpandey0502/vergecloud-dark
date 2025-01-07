@@ -37,10 +37,10 @@ export const FeatureDisplay = ({
               <img src={feature.icon} alt={feature.title} className="w-8 h-8" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-[#573FE7] text-xl font-semibold">
+              <h3 className="text-primary text-xl font-semibold">
                 {feature.title}
               </h3>
-              <p className="text-white/60 text-base leading-relaxed">
+              <p className="text-white text-base leading-relaxed">
                 {feature.description}
               </p>
             </div>
