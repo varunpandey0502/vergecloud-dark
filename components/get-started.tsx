@@ -28,7 +28,7 @@ const steps = [
 
 export default function GetStarted() {
   return (
-    <section className="bg-background px-4 sm:px-6 py-8 sm:py-12">
+    <section className="bg-background px-6 sm:px-6 py-8 sm:py-12">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16 space-y-3 sm:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white">
