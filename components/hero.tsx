@@ -31,11 +31,10 @@ export default function Hero() {
       </video>
 
       <div className="flex flex-col md:flex-row md:items-center justify-between max-w-screen-xl mx-auto items-center relative z-10 md:gap-32 gap-10">
-        <div className="space-y-6 flex flex-col items-start">
-          <h1 className="md:text-5xl text-3xl font-bold text-white">
-            Blazing-fast Content Delivery.
-            <br />
-            Everywhere, Every Time.
+        <div className="space-y-6 md:space-y-12 flex flex-col items-start">
+          <h1 className="md:text-5xl text-2xl font-extrabold text-white flex flex-col gap-2">
+            <div className="">Blazing-fast Content Delivery.</div>
+            <div>Everywhere, Every Time.</div>
           </h1>
           <p className="md:text-xl text-md text-white">
             Now{" "}
