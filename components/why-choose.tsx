@@ -1,4 +1,5 @@
 "use client";
+import { CTAButton } from "./cta-button";
 import {
   ContentCachingIcon,
   DdosProtectionIcon,
@@ -50,7 +51,7 @@ const features = [
 export default function WhyChoose() {
   return (
     <section className="bg-background px-6 pb-12">
-      <div className="container">
+      <div className="container flex flex-col items-center">
         <div className="text-center space-y-4 mb-16">
           <span className="text-white/60">Why Choose Vergecloud</span>
           <h2 className="text-2xl md:text-5xl font-bold text-white">
@@ -88,6 +89,7 @@ export default function WhyChoose() {
             </div>
           ))}
         </div>
+        <CTAButton />
       </div>
     </section>
   );
