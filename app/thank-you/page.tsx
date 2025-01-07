@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import successAnimation from "@/lottie/success.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function ThankYou() {
   return (
