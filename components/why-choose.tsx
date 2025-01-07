@@ -6,6 +6,7 @@ import {
   DdosProtectionIcon,
   RobustSecurityIcon,
   ValueForMoneyIcon,
+  ScalableInfrastructureIcon,
 } from "./icons";
 
 const features = [
@@ -19,7 +20,7 @@ const features = [
     icon: <ContentCachingIcon />,
     title: "Smart Caching",
     description:
-      "Be it streaming, downloads, or web content - push your content closer to your audience for ultra-fast delivery across continents.",
+      "Save bandwidth and reduce server load with intelligent caching. Keep content instantly accessible while cutting costs.",
   },
   {
     icon: <RealTimeOptimizationIcon />,
@@ -29,21 +30,21 @@ const features = [
   },
   {
     icon: <DdosProtectionIcon />,
-    title: "DDoS Protection",
+    title: "Robust Security",
     description:
       "Say hello to peace of mind with built-in DDoS protection, HTTPS encryption, and secure token authentication to protect your assets.",
   },
   {
-    icon: <RobustSecurityIcon />,
-    title: "Robust Security",
+    icon: <ScalableInfrastructureIcon />,
+    title: "Scalable Infrastructure",
     description:
-      "Handle traffic surges with ease. Our scalable infrastructure ensures consistent perform-ance even during high-demand events.",
+      "Handle traffic surges with ease. Our scalable infrastructure ensures consistent performance even during high-demand events.",
   },
   {
     icon: <ValueForMoneyIcon />,
     title: "Value for Money",
     description:
-      "Deliver the fastest experience possible with dynamic content optimization. We fine-tune performance on the fly.",
+      "No hidden costs, no surprises. We offer transparent and affordable pricing plans tailored to your business needs.",
   },
 ];
 
@@ -66,13 +67,13 @@ export default function WhyChoose() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative bg-[#0A0A0A] rounded-2xl border border-white/[0.08] transition-all duration-300 hover:scale-[1.02]"
+              className="group relative bg-[#0A0A0A] rounded-2xl border border-white/[0.08] transition-all duration-300 hover:scale-[1.02] h-full"
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-[#FF4D4D] opacity-0 rounded-2xl group-hover:opacity-40 blur-md transition-opacity" />
 
               {/* Content */}
-              <div className="relative bg-[#0a102a] rounded-2xl p-4 md:p-8 z-[1]">
+              <div className="relative bg-[#0a102a] rounded-2xl p-4 md:p-8 z-[1] h-full flex flex-col">
                 <div className="flex items-center gap-4 md:block">
                   <div className="w-12 h-12 md:w-16 md:h-16 p-2 rounded-full bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-[#FF4D4D]/20 group-hover:text-[#FF4D4D] shrink-0">
                     {feature.icon}

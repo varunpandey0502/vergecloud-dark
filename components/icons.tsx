@@ -186,7 +186,9 @@ export const RealTimeOptimizationIcon = ({
   );
 };
 
-export const RobustSecurityIcon = ({ fill = "currentColor" }: IconProps) => {
+export const ScalableInfrastructureIcon = ({
+  fill = "currentColor",
+}: IconProps) => {
   return (
     <svg
       width="49"

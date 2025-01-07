@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { CTAButton } from "./cta-button";
 
 type PlanFeature = {
   name: string;
@@ -183,10 +183,8 @@ export default function Pricing() {
               </table>
 
               {/* Get Started Button */}
-              <div className="relative z-10 mt-8 p-4">
-                <Button variant="default" size="lg" className="">
-                  Get Started For Free
-                </Button>
+              <div className="relative z-10 p-4">
+                <CTAButton />
               </div>
             </div>
           </div>
@@ -280,13 +278,7 @@ export default function Pricing() {
 
           {/* Mobile Get Started Button */}
           <div className="flex justify-center mt-8">
-            <Button
-              variant="default"
-              size="lg"
-              className="bg-[#573FE7] hover:bg-[#573FE7]/90 text-white px-8 py-6 text-lg font-semibold"
-            >
-              Get Started For Free
-            </Button>
+            <CTAButton />
           </div>
         </div>
       </div>

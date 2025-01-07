@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "VergeCloud",
-  description: "",
+  description: "Blazing-fast Content Delivery. Everywhere, Every Time.",
   robots: {
     index: false,
     follow: false,

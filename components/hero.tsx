@@ -55,7 +55,7 @@ export default function Hero() {
             <div className="bg-[#ffffff1a] rounded-lg px-4 sm:px-6 py-4 sm:py-8 border border-white/[0.08] w-full">
               <h3 className="text-4xl font-bold text-white">6 Mn+</h3>
               <p className="text-xs sm:text-sm text-white mt-1 sm:mt-2">
-                Responses Per Minute+
+                Responses Per Minute
               </p>
             </div>
             <div className="bg-[#ffffff1a] rounded-lg px-4 sm:px-6 py-4 sm:py-8 border border-white/[0.08] backdrop-blur-sm">
