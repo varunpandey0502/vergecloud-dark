@@ -1,7 +1,35 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 const Form = () => {
   const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      console.log("Message received:", {
+        origin: event.origin,
+        data: event.data,
+        event: event,
+      });
+
+      // Don't restrict by origin while testing
+      try {
+        if (typeof event.data === "string") {
+          const data = JSON.parse(event.data);
+          console.log("Parsed data:", data);
+        } else {
+          console.log("Data is not a string:", typeof event.data);
+        }
+      } catch (e) {
+        console.log("Raw event data:", event.data);
+        console.error("Error parsing:", e);
+      }
+    };
+
+    window.addEventListener("message", handleMessage);
+
+    // Cleanup
+    return () => window.removeEventListener("message", handleMessage);
+  }, []);
 
   return (
     <div id="form" ref={formRef}>
