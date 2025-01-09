@@ -15,8 +15,7 @@ export const Cta = () => {
               3 Months On Us. Sign Up and Save!
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl">
-              Get started in seconds. Limited Time Offer. No credit card
-              required.
+              Get started in seconds. Limited Time Offer.
             </p>
             <CTAButton />
           </div>
