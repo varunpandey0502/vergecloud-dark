@@ -11,6 +11,7 @@ const Form = () => {
         frameBorder="0"
         className="rounded-lg shadow-lg bg-primary border border-white/[0.08] w-[400px] h-[660px] md:w-[400px] md:h-[620px] border-none max-w-full min-w-[300px] sm:min-w-[400px]"
         src="https://forms.zohopublic.com/vergecloud1/form/LandingPageForm/formperma/q82z0LQEAjC5RcDxIDQHj1Zrod8SHSbpsrO6s_EQvCc"
+        // sandbox="allow-scripts allow-forms allow-same-origin allow-top-navigation"
       />
     </div>
   );

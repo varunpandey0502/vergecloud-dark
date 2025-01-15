@@ -1,6 +1,7 @@
 import { notoSans } from "@/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
+import TrackingScript from "@/components/tracking-script";
 
 export const metadata: Metadata = {
   title: "VergeCloud",
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.variable} font-sans`}>{children}</body>
+      <body className={`${notoSans.variable} font-sans`}>
+        {children}
+        <TrackingScript />
+      </body>
     </html>
   );
 }
